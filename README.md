@@ -1,149 +1,103 @@
-<h1 align="center">🌐 Konfigurasi Jaringan Dasar dengan Router, Switch, dan PC</h1>
+<h1 align="center">🌐 Praktikum Jaringan Komputer</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco Packet Tracer"/>
+  <img src="https://img.shields.io/badge/Networking_Practice-Labs-blue?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Networking Practice"/>
   <img src="https://img.shields.io/badge/IPv4_&_IPv6-0078D4?style=for-the-badge&logo=internetexplorer&logoColor=white" alt="IPv4 & IPv6"/>
-  <img src="https://img.shields.io/badge/Networking-Basic%20Configuration-2E8B57?style=for-the-badge" alt="Networking Basics"/>
-  <img src="https://img.shields.io/badge/Router_&_Switch_Config-555555?style=for-the-badge&logo=server&logoColor=white" alt="Router & Switch Configuration"/>
-  <img src="https://img.shields.io/badge/CCNA_Practice-Lab-orange?style=for-the-badge&logo=cisco&logoColor=white" alt="CCNA Practice Lab"/>
+  <img src="https://img.shields.io/badge/CCNA_Training-Basic_Configuration-orange?style=for-the-badge&logo=cisco&logoColor=white" alt="CCNA Training"/>
 </p>
 
 ---
 
-## 🧩 Deskripsi
-Proyek ini merupakan hasil praktikum **Konfigurasi Jaringan Dasar** menggunakan **Cisco Packet Tracer**.  
-Tujuan utama dari kegiatan ini adalah membangun dan mengonfigurasi **jaringan sederhana** yang terdiri dari **router, switch, dan dua PC**, serta melakukan pengujian konektivitas menggunakan **IPv4** dan **IPv6**.
+## 📘 Deskripsi
+Repositori ini berisi kumpulan hasil **praktikum mata kuliah Jaringan Komputer** yang dilakukan menggunakan **Cisco Packet Tracer**.  
+Setiap modul berisi **topologi jaringan, konfigurasi perangkat, dan hasil pengujian konektivitas** untuk memahami konsep dasar **networking dan routing** sesuai materi **CCNA (Cisco Certified Network Associate)**.
 
 ---
 
-## 🎯 Tujuan
-- Membuat topologi jaringan sederhana.
-- Melakukan konfigurasi IP Address (IPv4 & IPv6).
-- Mengatur hostname, password, dan banner keamanan pada router dan switch.
-- Melakukan verifikasi dan pengujian konektivitas antar-perangkat.
+## 🧩 Daftar Modul Praktikum
+
+| Modul | Judul Praktikum | Deskripsi Singkat |
+|:------|:----------------|:------------------|
+| [TA_Modul-1](./TA_Modul-1) | *Pengenalan Cisco Packet Tracer* | Mempelajari antarmuka dan dasar simulasi jaringan menggunakan Cisco Packet Tracer. |
+| [TA_Modul-2](./TA_Modul-2) | *Konfigurasi Jaringan Dasar dengan Router, Switch, dan PC* | Membuat jaringan sederhana dengan IPv4 & IPv6 serta pengujian konektivitas antar perangkat. |
+| [TA_Modul-3](./TA_Modul-3) | *Routing Statis IPv4/IPv6* | Mengonfigurasi routing statis antar subnet menggunakan IPv4 dan IPv6. |
+| [TA_Modul-4](./TA_Modul-4) | *DHCP dan VLAN Configuration* | Menerapkan pembagian jaringan menggunakan VLAN serta DHCP otomatis. |
+| [TA_Modul-5](./TA_Modul-5) | *Inter-VLAN Routing & Trunking* | Menghubungkan beberapa VLAN dengan router-on-a-stick. |
+| [TA_Modul-6](./TA_Modul-6) | *Access Control List (ACL)* | Mengatur izin lalu lintas jaringan berdasarkan kebijakan keamanan. |
+
+> 📂 Catatan: Modul yang belum tersedia akan ditambahkan secara bertahap sesuai jadwal praktikum.
 
 ---
 
-## 🛜 Topologi Jaringan
-```bash
-PC-B  <——>  R1  <——>  S1  <——>  PC-A
-```
-### Screenshot Topologi
-<p align="center">
-  <img src="topologi.png" alt="SS-an Topologi"/>
-</p>
-
-> Semua koneksi menggunakan **kabel straight-through** karena antar perangkat berbeda jenis.
+## 🛠️ Tools & Software
+- 🧩 **Cisco Packet Tracer** — Simulator jaringan buatan Cisco.
+- 🧠 **CCNA Curriculum** — Referensi konfigurasi dan perintah.
 
 ---
 
-## 📋 Tabel IP Address
-
-| Device | Interface | IPv4 Address | Default Gateway | IPv6 Address |
-|:-------|:-----------|:--------------|:----------------|:--------------|
-| R1 | G0/0/0 | 192.168.0.1/24 | - | 2001:db8:acad::1/64 |
-| R1 | G0/0/1 | 192.168.1.1/24 | - | 2001:db8:acad:1::1/64 |
-| S1 | VLAN 1 | 192.168.1.2/24 | 192.168.1.1 | - |
-| PC-A | NIC | 192.168.1.3/24 | 192.168.1.1 | 2001:db8:acad:1::3/64 |
-| PC-B | NIC | 192.168.0.3/24 | 192.168.0.1 | 2001:db8:acad::3/64 |
-
+## 🧪 Struktur Folder
+Setiap folder modul berisi:
+```
+📁 TA_Modul-X
+├── 📄 README.md          → Laporan konfigurasi dan hasil pengujian
+├── 🧾 Topologi.pkt       → File Cisco Packet Tracer
+├── 🖼️ Screenshot/         → Dokumentasi hasil (ping, show command, dsb)
+└── ⚙️ Config/             → File konfigurasi tambahan (tidak semua ada)
+```
 ---
 
-## ⚙️ Konfigurasi Perangkat
+## 💾 Cara Clone & Jalankan Repo
 
-### 🔹 Router (R1)
+### 🔹 1. Clone Repositori
+Buka terminal (Mac/Linux) atau Git Bash (Windows), lalu jalankan perintah berikut:
 ```bash
-enable
-config terminal
-hostname R1
-no ip domain-lookup
-enable secret class
-line console 0
- password cisco
- login
-line vty 0 4
- password cisco
- login
-service password-encryption
-banner motd $ Authorized Users Only! $
+git clone https://github.com/HibbanRdn/Praktikum-Jarkom.git
 ```
+Atau jika kamu menggunakan SSH:
 ```bash
-interface g0/0/0
- description Connected to PC-B
- ip address 192.168.0.1 255.255.255.0
- ipv6 address 2001:db8:acad::1/64
- ipv6 address fe80::1 link-local
- no shutdown
+git clone git@github.com:HibbanRdn/Praktikum-Jarkom.git
 ```
+Masuk ke folder proyek:
 ```bash
-interface g0/0/1
- description Connected to S1 (F0/5)
- ip address 192.168.1.1 255.255.255.0
- ipv6 address 2001:db8:acad:1::1/64
- ipv6 address fe80::1 link-local
- no shutdown
-```
-```bash
-ipv6 unicast-routing
-copy running-config startup-config
-```
-### 🔹 Switch (S1)
-```bash
-enable
-config terminal
-hostname S1
-no ip domain-lookup
-interface vlan 1
- ip address 192.168.1.2 255.255.255.0
- no shutdown
-exit
-ip default-gateway 192.168.1.1
-copy running-config startup-config
-```
-### 🔹 PC 
-Perangkat	IPv4	Subnet Mask	Gateway	IPv6
-- PC-A	192.168.1.3	255.255.255.0	192.168.1.1	2001:db8:acad:1::3/64
-- PC-B	192.168.0.3	255.255.255.0	192.168.0.1	2001:db8:acad::3/64
-
----
-
-## 🧪 Pengujian Konektivitas
-
-### 1️⃣ Ping dari PC-A ke PC-B
-```bash
-ping 192.168.0.3
-```
-✅ Hasil: Ping berhasil — menandakan konfigurasi dan routing antar jaringan sudah berfungsi.
-<p align="center">
-  <img src="tesPing.png" alt="Hasil Ping Berhasil"/>
-</p>
-
-### 2️⃣ Verifikasi dengan Show Commands
-```bash
-R1# show ip interface brief
-R1# show ipv6 interface brief
-R1# show ip route
-R1# show ipv6 route
-S1# show ip interface brief
+cd Praktikum-Jarkom
 ```
 
 ---
 
-## 🧠 Pertanyaan Refleksi
-1. Jika interface G0/0/1 administratively down → aktifkan dengan perintah no shutdown.
-2. Jika G0/0/1 diberi IP 192.168.1.2, maka terjadi konflik IP dengan switch → PC-A gagal ping ke PC-B.
-3. Kode routing C = Connected network.
-4. Jumlah route dengan kode C = 2 (G0/0/0 dan G0/0/1).
+### 🔹 2. Buka File di Cisco Packet Tracer
+1. Pastikan Cisco Packet Tracer sudah terinstal di perangkatmu.
+  > Versi direkomendasikan: Packet Tracer 8.2 atau lebih baru
+2. Buka aplikasi → pilih menu File → Open
+3. Arahkan ke file .pkt dalam folder modul yang ingin dijalankan.  
+```
+> Praktikum-Jarkom/TA_Modul-2/TA2_M. Hibban Ramadhan_JK-E.pkt
+```
+4. Jalankan simulasi dan uji konektivitas sesuai langkah di README masing-masing modul.
 
 ---
 
-## 📁 File Proyek
-File hasil konfigurasi:
-**TA2_M. Hibban Ramadhan_JK-E.pkt**
+## 📅 Tujuan Pembelajaran
+Melalui serangkaian praktikum ini, mahasiswa diharapkan mampu:
+- Memahami konsep dasar jaringan komputer.
+- Mengonfigurasi perangkat jaringan (Router, Switch, PC).  
+- Menerapkan addressing IPv4 dan IPv6.
+- Melakukan routing, VLAN, dan ACL sesuai kebutuhan jaringan.
+- Menganalisis hasil konektivitas dengan perintah show dan ping.
 
 ---
-## 👨‍💻 Pembuat 
-Nama: Muhamad Hibban Ramadhan 
-Mata Kuliah: Praktikum Jaringan Komputer 
-Semester: 5 — Teknik Informatika 
+## 👨‍💻 Penyusun
+```
+Nama: Muhamad Hibban Ramadhan
+Program Studi: Teknik Informatika
+Semester: 5
 Kampus: Universitas Lampung
+Mata Kuliah: Praktikum Jaringan Komputer (CCNA)
+```
+---
+
+## 🪪 Lisensi
+Proyek ini dilisensikan di bawah MIT License — silakan gunakan dan modifikasi untuk tujuan pembelajaran.
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with-Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown Badge"/>
+</p>
