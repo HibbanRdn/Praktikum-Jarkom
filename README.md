@@ -28,6 +28,11 @@ Tujuan utama dari kegiatan ini adalah membangun dan mengonfigurasi **jaringan se
 ```bash
 PC-B  <——>  R1  <——>  S1  <——>  PC-A
 ```
+### Screenshot Topologi
+<p align="center">
+  <img src="topologi.png" alt="SS-an Topologi"/>
+</p>
+
 > Semua koneksi menggunakan **kabel straight-through** karena antar perangkat berbeda jenis.
 
 ---
@@ -95,10 +100,10 @@ exit
 ip default-gateway 192.168.1.1
 copy running-config startup-config
 ```
-### 🔹 PC
+### 🔹 PC 
 Perangkat	IPv4	Subnet Mask	Gateway	IPv6
-PC-A	192.168.1.3	255.255.255.0	192.168.1.1	2001:db8:acad:1::3/64
-PC-B	192.168.0.3	255.255.255.0	192.168.0.1	2001:db8:acad::3/64
+- PC-A	192.168.1.3	255.255.255.0	192.168.1.1	2001:db8:acad:1::3/64
+- PC-B	192.168.0.3	255.255.255.0	192.168.0.1	2001:db8:acad::3/64
 
 ---
 
@@ -137,8 +142,8 @@ File hasil konfigurasi:
 **TA2_M. Hibban Ramadhan_JK-E.pkt**
 
 ---
-## 👨‍💻 Pembuat
-Nama: Muhamad Hibban Ramadhan
-Mata Kuliah: Praktikum Jaringan Komputer
-Semester: 5 — Teknik Informatika
+## 👨‍💻 Pembuat 
+Nama: Muhamad Hibban Ramadhan 
+Mata Kuliah: Praktikum Jaringan Komputer 
+Semester: 5 — Teknik Informatika 
 Kampus: Universitas Lampung
