@@ -92,7 +92,7 @@ Nama: Muhamad Hibban Ramadhan
 Program Studi: Teknik Informatika
 Semester: 5
 Kampus: Universitas Lampung
-Mata Kuliah: Praktikum Jaringan Komputer (CCNA)
+Mata Kuliah: Praktikum Jaringan Komputer
 ```
 ---
 

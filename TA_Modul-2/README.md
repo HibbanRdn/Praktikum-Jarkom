@@ -113,10 +113,11 @@ Perangkat	IPv4	Subnet Mask	Gateway	IPv6
 ```bash
 ping 192.168.0.3
 ```
-✅ Hasil: Ping berhasil — menandakan konfigurasi dan routing antar jaringan sudah berfungsi.
+
 <p align="center">
   <img src="tesPing.png" alt="Hasil Ping Berhasil"/>
 </p>
+✅ Hasil: Ping berhasil, menandakan konfigurasi dan routing antar jaringan sudah berfungsi.
 
 ### 2️⃣ Verifikasi dengan Show Commands
 ```bash
@@ -143,7 +144,10 @@ File hasil konfigurasi:
 
 ---
 ## 👨‍💻 Pembuat 
-Nama: Muhamad Hibban Ramadhan 
-Mata Kuliah: Praktikum Jaringan Komputer 
-Semester: 5 — Teknik Informatika 
+```
+Nama: Muhamad Hibban Ramadhan
+Program Studi: Teknik Informatika
+Semester: 5
 Kampus: Universitas Lampung
+Mata Kuliah: Praktikum Jaringan Komputer
+```
