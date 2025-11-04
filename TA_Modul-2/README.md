@@ -113,7 +113,6 @@ Perangkat	IPv4	Subnet Mask	Gateway	IPv6
 ```bash
 ping 192.168.0.3
 ```
-
 <p align="center">
   <img src="tesPing.png" alt="Hasil Ping Berhasil"/>
 </p>
@@ -142,6 +141,15 @@ S1# show ip interface brief
 File hasil konfigurasi:
 **TA2_M. Hibban Ramadhan_JK-E.pkt**
 
+---
+## 🎥 Video Tutorial
+<p align="center">
+  <a href="https://youtu.be/-EBb4JbHD8E?si=iicTO_e6QRoq_nJo" target="_blank">
+    <img src="https://img.shields.io/badge/Watch_on-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Video"/>
+  </a>
+</p>
+
+> Klik badge di atas untuk menonton tutorial konfigurasi jaringan dasar menggunakan Cisco Packet Tracer.
 ---
 ## 👨‍💻 Pembuat 
 ```
