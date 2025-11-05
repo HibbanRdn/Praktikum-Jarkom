@@ -113,6 +113,13 @@ Perangkat	IPv4	Subnet Mask	Gateway	IPv6
 ```bash
 ping 192.168.0.3
 ```
+#### ⚠️ Sebelum Konfigurasi
+<p align="center">
+  <img src="tesPingGagal.png" alt="Hasil Ping Berhasil"/>
+</p>
+❌ Hasil: Ping gagal, menandakan konfigurasi dan routing antar jaringan belum dilakukan.
+
+#### ⚠️ Setelah Konfigurasi
 <p align="center">
   <img src="tesPing.png" alt="Hasil Ping Berhasil"/>
 </p>
@@ -131,7 +138,7 @@ S1# show ip interface brief
 
 ## 🧠 Pertanyaan Refleksi
 1. Jika interface G0/0/1 administratively down → aktifkan dengan perintah no shutdown.
-2. Jika G0/0/1 diberi IP 192.168.1.2, maka terjadi konflik IP dengan switch → PC-A gagal ping ke PC-B.
+2. Jika G0/0/1 diberi IP 192.168.1.2, maka PC-A tidak dapat ping ke PC-B karena berada di jaringan berbeda dan gateway default 192.168.1.1 tidak terhubung ke perangkat mana pun, sehingga paket tidak dapat dirutekan.
 3. Kode routing C = Connected network.
 4. Jumlah route dengan kode C = 2 (G0/0/0 dan G0/0/1).
 
@@ -144,7 +151,7 @@ File hasil konfigurasi:
 ---
 ## 🎥 Video Tutorial
 <p align="center">
-  <a href="https://youtu.be/-EBb4JbHD8E?si=iicTO_e6QRoq_nJo" target="_blank">
+  <a href="https://youtu.be/-EBb4JbHD8E?si=iicTO_e6QRoq_nJo" target="blank">
     <img src="https://img.shields.io/badge/Watch_on-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Video"/>
   </a>
 </p>
