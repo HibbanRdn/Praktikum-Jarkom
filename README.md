@@ -2,8 +2,6 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&height=125&color=gradient&text=🌐%20Praktikum%20Jaringan%20Komputer&fontSize=34&fontAlignY=35&animation=fadeIn" alt="Praktikum Jaringan Komputer"/>
 </p>
 
-<h1 align="center">🌐 Praktikum Jaringan Komputer</h1>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Cisco_Packet_Tracer-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco Packet Tracer"/>
   <img src="https://img.shields.io/badge/Networking_Practice-Labs-blue?style=for-the-badge&logo=gnometerminal&logoColor=white" alt="Networking Practice"/>
