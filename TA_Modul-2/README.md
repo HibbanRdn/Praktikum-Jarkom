@@ -151,7 +151,7 @@ File hasil konfigurasi:
 ---
 ## 🎥 Video Tutorial
 <p align="center">
-  <a href="https://youtu.be/-EBb4JbHD8E?si=iicTO_e6QRoq_nJo" target="blank">
+  <a href="https://youtu.be/-EBb4JbHD8E?si=iicTO_e6QRoq_nJo" target="_blank">
     <img src="https://img.shields.io/badge/Watch_on-YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Video"/>
   </a>
 </p>
