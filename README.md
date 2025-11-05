@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=125&color=gradient&text=🌐%20Praktikum%20Jaringan%20Komputer&fontSize=32&fontAlignY=35" alt="Praktikum Jaringan Komputer"/>
+</p>
+
 <h1 align="center">🌐 Praktikum Jaringan Komputer</h1>
 
 <p align="center">
