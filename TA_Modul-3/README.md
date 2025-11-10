@@ -32,7 +32,7 @@ PC-B (VLAN 20) ——┘
 ### Screenshot Topologi
 
 <p align="center">
-  <img src="assets/topologi3.png" alt="Topologi Inter-VLAN Routing"/>
+  <img src="topologi3.png" alt="Topologi Inter-VLAN Routing"/>
 </p>
 
 > Semua perangkat dihubungkan menggunakan **kabel straight-through**, dan port antar switch-router dikonfigurasi sebagai **trunk**.
@@ -152,14 +152,14 @@ ping 192.168.20.10
 #### ⚠️ Sebelum Konfigurasi Router
 
 <p align="center">
-  <img src="assets/pinggagal.png" alt="Ping Gagal"/>
+  <img src="pinggagal.png" alt="Ping Gagal"/>
 </p>
 ❌ Hasil: Gagal — antar VLAN tidak bisa berkomunikasi karena belum ada routing.
 
 #### ✅ Setelah Konfigurasi Router-on-a-Stick
 
 <p align="center">
-  <img src="assets/pingberhasil.png" alt="Ping Berhasil"/>
+  <img src="pingberhasil.png" alt="Ping Berhasil"/>
 </p>
 ✅ Hasil: Berhasil — router berhasil merutekan antar VLAN.
 
